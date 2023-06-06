@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('node_modules\bootstrap\scss\bootstrap.scss') }}">
+    <link href="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css')}}" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     @yield('hojas-estilo')
-    <title>Home</title>
+    <title>Inicio</title>
 </head>
 
 <body>
@@ -16,17 +17,22 @@
 
         <div class="row bg-dark text-white">
             <div class="row">
-                <div class="col-8">
-                    Bienvenido <span class="fw-bold">User1</span>
+                <div class="col-1">
+                    Bienvenido 
+                    
                 </div>
 
-                <!-- último  login -->
-                <div class="col-3 text-end d-none d-lg-block">
-                    Último inicio de sesión: 4 de abril de 2023 a las 9:25
+                <div class = "col-3">
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Seleccione usuario</option>
+                    <option value="1">Alumno</option>
+                    <option value="2">Profesor</option>
+                    <option value="3">Administrador de sistema</option>
+                    </select>
                 </div>
 
                 <!-- cerrar sesión -->
-                <div class="col-1 text-end d-none d-lg-block">
+                <div class="col-6 text-end d-none d-lg-block">
                     <a href="{{ route('home.login') }}" class="text-white">Cerrar Sesión</a>
                 </div>
             </div>
@@ -37,7 +43,7 @@
     <div class="container-fluid px-0">
         <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">EIN133_A</a>
+                <a class="navbar-brand" href="#">Propuestas estudiantiles</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -46,38 +52,19 @@
                         <li class="nav-item">
                             <a class="nav-link @if(Route::current()->getName()=='home.index') active @endif" aria-current="page" href="{{ route('home.index') }}">Inicio</a>
                         </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link @ if(Route::current()->getName()=='') active @ endif" href="{ { route('') }}">Equipos</a>
+                            <a class="nav-link" @if(Route::current()->getName()=='propuesta.index') active @endif href="{{route('propuesta.index')}}">Crear una propuesta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Estadios</a>
+                            <a class="nav-link" href="#">Editar propuesta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Estadísticas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @ if(Route::current()->getName()=='jugadores.index') active @ endif" href="{ { route('jugadores.index') }}">Jugadores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @ if(Route::current()->getName()=='partidos.index') active @ endif" href="{ {route('partidos.index')}}">Partidos</a>
+                            <a class="nav-link @ if(Route::current()->getName()=='jugadores.index') active @ endif" href="{ { route('jugadores.index') }}">Listado de propuestas de estudiantes</a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Configuración
-                            </a>
-                            <ul class="dropdown-menu bg-primary dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
-                                <li><a class="dropdown-item" href="#">Usuarios</a></li>
-                                <li><a class="dropdown-item" href="#">Privacidad</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://www.usm.cl">UTFSM</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="{{ route('home.login') }}">Cerrar Sesión</a>
+                        <li class="nav-item d-lg-none" >
+                            <a class="nav-link" href="{{ route('home.login') }}" >Cerrar Sesión</a>
                         </li>
 
                     </ul>
