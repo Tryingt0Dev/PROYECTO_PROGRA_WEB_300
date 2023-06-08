@@ -20,3 +20,4 @@ use App\Http\Controllers\PropuestaController;
 Route::get('/',[HomeController::class,'index'])->name('home.index');
 Route::get('/login',[HomeController::class,'login'])->name('home.login');
 Route::get('/CrearPropuesta',[PropuestaController::class,'index'])->name('propuesta.index');
+Route::get('/EditarPropuesta',[PropuestaController::class,'edit'])->name('propuesta.edit');

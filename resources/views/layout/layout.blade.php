@@ -54,17 +54,13 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" @if(Route::current()->getName()=='propuesta.index') active @endif href="{{route('propuesta.index')}}">Crear una propuesta</a>
+                            <a class="nav-link @if(Route::current()->getName()=='propuesta.index') active @endif" href="{{route('propuesta.index')}}">Crear una propuesta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Editar propuesta</a>
+                            <a class="nav-link @if(Route::current()->getName()=='propuesta.edit') active @endif" href="{{route('propuesta.edit')}}">Editar propuesta</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link @ if(Route::current()->getName()=='jugadores.index') active @ endif" href="{ { route('jugadores.index') }}">Listado de propuestas de estudiantes</a>
-                        </li>
-
                         <li class="nav-item d-lg-none" >
-                            <a class="nav-link" href="{{ route('home.login') }}" >Cerrar Sesión</a>
+                            <a class="nav-link" href="{{ Route('home.login') }}" >Cerrar Sesión</a>
                         </li>
 
                     </ul>
@@ -72,7 +68,7 @@
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-light" type="submit">Buscar</button>
                     </form>
-                </div>
+                </div>+
             </div>
         </nav>
     </div>

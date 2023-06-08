@@ -3,7 +3,7 @@
 @section('contenido-principal')
 <div class="row mt-2">
     <div class="col-8">
-        <h3>Crear nueva propuesta</h3>
+        <h3>Editar propuesta</h3>
     </div>
     <div class="col-4 d-flex align-items-center justify-content-end">
         <a href="{ {route('#')}}" class="btn btn-warning">Cancelar</a>

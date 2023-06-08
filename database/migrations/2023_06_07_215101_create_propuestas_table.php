@@ -16,11 +16,9 @@ return new class extends Migration
             $table->date('fecha');
             $table->string('documento',100);
             $table->tinyInteger('estado');
-            //FK
             $table->string('estudiante_rut',10);
+            //FK
             $table->foreign('estudiante_rut')->references('rut')->on('estudiantes');
-
-            $table->timestamps();
         });
     }
 

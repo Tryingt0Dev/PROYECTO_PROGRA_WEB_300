@@ -10,4 +10,8 @@ class PropuestaController extends Controller
 
         return view('propuesta.index');
     }
+
+    public function edit(){
+        return view('propuesta.edit');
+     }
 }
