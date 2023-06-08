@@ -15,7 +15,7 @@
     <div class="card">
         <div class="card-header bg-dark text-white">Ingrese los datos requeridos</div>
         <div class="card-body">
-            <form method="POST" action="{ {route('#')}}">
+            <form method="POST" action="{ {route('#')}}" enctype="multipart/form-data>
                 @csrf
                 {{-- rut --}}
                 <div class="mb-3">
@@ -40,16 +40,18 @@
                 {{-- Seleccion de archivo propuesta--}}
                 <div class="mb-3">
                     <label for ="Archivo1" class="form-label">Archivo de su propuesta</label>
-                    <input class="form-control" type="file" id="ArchivoPropuesta">
+                    <input class="form-control" type="file" name = "Documento" id="Documento">
                     
                 </div>
+
                 {{-- propuesta --}}
                 <div class="mb-3">
-                    <label class="form-label" for="equipo">estado</label>
+                    <label class="form-label" for="propuesta">estado</label>
                     <select id="propuestas" name="propuestas" class="form-control">
-                        @ foreach($propuestas as $propuesta)
-                        < option value="{ {$propuesta->id} }">{ {$propuesta->nombre} }</ option>
-                        @ endforeach
+                        <option value="1">Pendiente</option>
+                        <option value="2">En revision</option>
+                        <option value="3">Aprobado</option>
+                        <option value="4">Rechazado</option>
                     </select>
                 </div>
                 {{-- botones --}}
