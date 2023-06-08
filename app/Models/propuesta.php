@@ -9,6 +9,6 @@ class propuesta extends Model
 {
     use HasFactory;
     public function estudiantes(){
-        return $this->belongsTo(estudiante::class);
+        return $this->belongsTo(estudiante::class,estudiante_rut,rut);
     }
 }

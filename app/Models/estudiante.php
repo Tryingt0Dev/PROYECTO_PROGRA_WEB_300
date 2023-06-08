@@ -10,7 +10,7 @@ class estudiante extends Model
     use HasFactory;
 
     public function propuestas(){
-        return $this->hasMany(propuesta::class);
+        return $this->hasMany(propuesta::class,estudiante_rut,rut);
     }
     
     
