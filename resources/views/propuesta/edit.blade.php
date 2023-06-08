@@ -47,15 +47,18 @@
                 <div class="mb-3">
                     <label class="form-label" for="equipo">estado</label>
                     <select id="propuestas" name="propuestas" class="form-control">
-                        @ foreach($propuestas as $propuesta)
-                        < option value="{ {$propuesta->id} }">{ {$propuesta->nombre} }</ option>
-                        @ endforeach
+
+                        <option value="1">Pendiente</option>
+                        <option value="2">En revision</option>
+                        <option value="3">Aprobado</option>
+                        <option value="4">Rechazado</option>
+                        
                     </select>
                 </div>
                 {{-- botones --}}
                 <div class="mb-3 d-grid gap-2 d-lg-block">
                     <button class="btn btn-warning" type="reset">Cancelar</button>
-                    <button class="btn btn-success" type="submit" >Subir propuesta</button>
+                    <button class="btn btn-success" type="submit" >Editar propuesta</button>
                 </div>
             </form>
         </div>
@@ -63,3 +66,6 @@
 </div>
 
 @endsection
+                       <!-- @ foreach($propuestas as $propuesta)
+                        < option value="{ {$propuesta->id} }">{ {$propuesta->nombre} }</ option>
+                        @ endforeach-->
