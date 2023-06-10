@@ -12,7 +12,8 @@
                             <div class="card-header bg-dark text-white">Propuestas</div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div col-2> 
+                                    
+                                    <div> 
                                         <p>Alumno</p>
                                         <hr/>
                                         <p>Profesor</p>
@@ -25,7 +26,7 @@
                                         </span>
                                         </button>
                                     </div>
-                                    <div col="col-2">
+                                    <div>
                                         <label for="exampleFormControlTextarea1" class="form-label" style="resize=none">Comentarios</label>
                                         <textarea class="form-control" id="Textarea1" rows="3"></textarea>
                                     </div>
@@ -37,7 +38,7 @@
                             <div class="card-header bg-dark text-white">Propuestas</div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div col-2> 
+                                    <div> 
                                         <p>Alumno</p>
                                         <hr/>
                                         <p>Profesor</p>
@@ -50,7 +51,7 @@
                                         </span>
                                         </button>
                                     </div>
-                                    <div col="col-2">
+                                    <div>
                                         <label for="exampleFormControlTextarea1" class="form-label" style="resize=none">Comentarios</label>
                                         <textarea class="form-control" id="Textarea1" rows="3"></textarea>
                                     </div>
@@ -61,7 +62,7 @@
                             <div class="card-header bg-dark text-white">Propuestas</div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div col-2> 
+                                    <div> 
                                         <p>Alumno</p>
                                         <hr/>
                                         <p>Profesor</p>
@@ -74,7 +75,7 @@
                                         </span>
                                         </button>
                                     </div>
-                                    <div col="col-2">
+                                    <div>
                                         <label for="exampleFormControlTextarea1" class="form-label" style="resize=none">Comentarios</label>
                                         <textarea class="form-control" id="Textarea1" rows="3"></textarea>
                                     </div>
@@ -85,7 +86,7 @@
                             <div class="card-header bg-dark text-white">Propuestas</div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div col-2> 
+                                    <div> 
                                         <p>Alumno</p>
                                         <hr/>
                                         <p>Profesor</p>
@@ -98,7 +99,7 @@
                                         </span>
                                         </button>
                                     </div>
-                                    <div col="col-2">
+                                    <div>
                                         <label for="exampleFormControlTextarea1" class="form-label" style="resize=none">Comentarios</label>
                                         <textarea class="form-control" id="Textarea1" rows="3"></textarea>
                                     </div>
