@@ -20,6 +20,17 @@
                                         <hr/>
                                         <p>Email</p>
                                         <hr/>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="propuesta">estado</label>
+                                                <select id="propuestas" name="propuestas" class="form-control">
+
+                                                    <option value="1">Pendiente</option>
+                                                    <option value="2">En revision</option>
+                                                    <option value="3">Aprobado</option>
+                                                    <option value="4">Rechazado</option>
+                        
+                                                </select>
+                                        </div>
                                         <button>
                                         <span class="material-symbols-outlined">
                                         download_for_offline
@@ -45,6 +56,17 @@
                                         <hr/>
                                         <p>Email</p>
                                         <hr/>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="propuesta">estado</label>
+                                                <select id="propuestas" name="propuestas" class="form-control">
+
+                                                    <option value="1">Pendiente</option>
+                                                    <option value="2">En revision</option>
+                                                    <option value="3">Aprobado</option>
+                                                    <option value="4">Rechazado</option>
+                        
+                                                </select>
+                                        </div>
                                         <button>
                                         <span class="material-symbols-outlined">
                                         download_for_offline
@@ -69,6 +91,17 @@
                                         <hr/>
                                         <p>Email</p>
                                         <hr/>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="propuesta">estado</label>
+                                                <select id="propuestas" name="propuestas" class="form-control">
+
+                                                    <option value="1">Pendiente</option>
+                                                    <option value="2">En revision</option>
+                                                    <option value="3">Aprobado</option>
+                                                    <option value="4">Rechazado</option>
+                        
+                                                </select>
+                                        </div>
                                         <button>
                                         <span class="material-symbols-outlined">
                                         download_for_offline
@@ -93,6 +126,17 @@
                                         <hr/>
                                         <p>Email</p>
                                         <hr/>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="propuesta">estado</label>
+                                                <select id="propuestas" name="propuestas" class="form-control">
+
+                                                    <option value="1">Pendiente</option>
+                                                    <option value="2">En revision</option>
+                                                    <option value="3">Aprobado</option>
+                                                    <option value="4">Rechazado</option>
+                        
+                                                </select>
+                                        </div>
                                         <button>
                                         <span class="material-symbols-outlined">
                                         download_for_offline

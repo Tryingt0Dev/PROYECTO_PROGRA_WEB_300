@@ -45,7 +45,7 @@
                 </div>
                 {{-- propuesta --}}
                 <div class="mb-3">
-                    <label class="form-label" for="equipo">estado</label>
+                    <label class="form-label" for="propuesta">estado</label>
                     <select id="propuestas" name="propuestas" class="form-control">
 
                         <option value="1">Pendiente</option>
