@@ -56,7 +56,7 @@
                     </select>
                 </div>
                 {{-- botones --}}
-                <div class="mb-3 d-grid gap-2 d-lg-block">
+                <div class="mb-3  gap-2 d-lg-block">
                     <button class="btn btn-warning" type="reset">Cancelar</button>
                     <button class="btn btn-success" type="submit" >Editar propuesta</button>
                 </div>
